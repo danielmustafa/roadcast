@@ -1,14 +1,14 @@
 export default function Header() {
-    return (
-        <section className="hero is-primary is-small">
-        <div className="hero-body">
-          <p className="title has-text-centered">
-            Ready to roll?
-          </p>
-          <p className="subtitle has-text-centered">
-            Find a &#39;cast to match your drive time
-          </p>
-        </div>
-      </section> 
-    )
+  return (
+    <div className="hero is-primary is-small">
+      <div className="hero-body">
+        <p className="title has-text-centered">
+          Ready to roll?
+        </p>
+        <p className="subtitle has-text-centered">
+          Find a &#39;cast to match your drive time
+        </p>
+      </div>
+    </div>
+  )
 }

@@ -31,7 +31,7 @@ export default function GenreList(props: GenreListProps) {
     }
 
     return (
-        <div className="box buttons">
+        <div className="buttons">
             {genreTags
                 .map(genreTag => {
                     return <GenreButton

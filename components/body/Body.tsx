@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import MapView from "../mapView/MapView";
+import OriginDestinationView from "../mapView/MapView";
 import PodcastView from "../podcastView/PodcastView";
 import Coords from "@/models/location/Coords";
+import Header from "../header/Header";
+
 export default function Body() {
     const [originCoords, setOriginCoords] = useState<Coords>({ lat: 0.0, lng: 0.0 })
 
@@ -12,19 +14,13 @@ export default function Body() {
                 lng: res.coords.longitude
             })
         })
-        
-        
-
     }, [])
 
-    
-
     return (
-        <div className="columns">
-            <div className="column">
-                <MapView />
-            </div>
-            <div className="column">
+        <div className="container">
+            <Header />
+            <div className="box has-background-dark has-text-light ">
+                <OriginDestinationView />
                 <PodcastView />
             </div>
         </div>
